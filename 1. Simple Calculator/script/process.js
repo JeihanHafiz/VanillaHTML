@@ -13,7 +13,7 @@ function outputProcess(operator, firstNumber, secondNumber) {
   outputResult(currentValue, calculateDescription);
 }
 
-//operator function
+// //operator function
 function operatorBtn(operator) {
   const numbers = getInputNumber();
   const initialResult = currentValue;
@@ -35,6 +35,24 @@ function operatorBtn(operator) {
   }
   outputProcess(operator, initialResult, numbers)
 }
+
+//operator function 2nd version
+function add(){
+  calculateResult('add')
+}
+
+function subtract(){
+  calculateResult('sub')
+}
+
+function multiply(){
+  calculateResult('mul')
+}
+
+function divide(){
+  calculateResult('div')
+}
+
 
 //function of each operator button
 addBtn.addEventListener('click', () => operatorBtn("+"))
